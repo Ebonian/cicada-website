@@ -14,9 +14,9 @@ const app = express();
 const port = process.env.PORT || 9000;
 
 const pusher = new Pusher({
-  appId: "1269344",
-  key: "a1d6960ce79732d6b02f",
-  secret: "ac22380fe63c9c1fcab8",
+  appId: process.env.PUSHER_APPID,
+  key: process.env.PUSHER_KEY,
+  secret: process.env.PUSHER_SECRET,
   cluster: "ap1",
   useTLS: true,
 });
@@ -32,7 +32,7 @@ app.use((req, res, next) => {
 });
 
 // database config
-const URI = process.env.URI;
+const URI = process.env.MONGO_URI;
 
 mongoose.connect(URI, {
   useNewUrlParser: true,
