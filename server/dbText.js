@@ -5,4 +5,5 @@ const cicadaSchema = mongoose.Schema({
   name: String,
 });
 
+//collection
 export default mongoose.model("content", cicadaSchema);
