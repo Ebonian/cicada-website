@@ -1,7 +1,7 @@
 // importing
 import express from "express";
 import mongoose from "mongoose";
-import Contents from "./dbText.js";
+import Contents from "./dbContent.js";
 import Pusher from "pusher";
 import "dotenv/config";
 // const express = require("express");
