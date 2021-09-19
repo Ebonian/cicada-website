@@ -24,6 +24,13 @@ const pusher = new Pusher({
 // middleware
 app.use(express.json());
 
+app.use((req, res, next) => {
+  // set a header
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Headers", "*");
+  next();
+});
+
 // database config
 const URI = process.env.URI;
 
@@ -32,7 +39,7 @@ mongoose.connect(URI, {
   useUnifiedTopology: true,
 });
 
-const db = mongoose.connection;
+const db = mongoose.connection; // make it realtime
 db.once("open", () => {
   console.log("Database Connected");
 
@@ -45,8 +52,8 @@ db.once("open", () => {
     if (change.operationType === "insert") {
       const messageDetails = change.fullDocument;
       pusher.trigger("messages", "inserted", {
-        name: messageDetails.user,
         content: messageDetails.content,
+        name: messageDetails.name,
       });
     }
   });
