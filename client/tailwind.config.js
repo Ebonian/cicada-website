@@ -6,6 +6,12 @@ module.exports = {
     extend: {
       spacing: {
         600: "600px",
+        500: "520px",
+        85: "85px",
+      },
+      fontSize: {
+        card: "9rem",
+        cardhover: "10rem",
       },
     },
   },

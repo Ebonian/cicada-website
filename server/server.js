@@ -50,10 +50,11 @@ db.once("open", () => {
     console.log(change);
 
     if (change.operationType === "insert") {
-      const messageDetails = change.fullDocument;
-      pusher.trigger("messages", "inserted", {
-        content: messageDetails.content,
-        name: messageDetails.name,
+      const contentDetails = change.fullDocument;
+      pusher.trigger("contents", "inserted", {
+        content: contentDetails.content,
+        name: contentDetails.name,
+        type: contentDetails.type,
       });
     }
   });
@@ -73,9 +74,9 @@ app.get("/contents/sync", (req, res) => {
 });
 
 app.post("/contents/new", (req, res) => {
-  const dbMessage = req.body;
+  const dbcontent = req.body;
 
-  Contents.create(dbMessage, (err, data) => {
+  Contents.create(dbcontent, (err, data) => {
     if (err) {
       res.status(500).send(err);
     } else {

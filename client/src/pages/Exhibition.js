@@ -48,7 +48,7 @@ function LandingComponent() {
   }, []);
 
   const text1EnterAnim = () => {
-    gsap.to(subtitle1, 0.2, {
+    gsap.to(subtitle1, 1, {
       delay: 0.2,
       opacity: 1,
       y: -20,
@@ -57,7 +57,7 @@ function LandingComponent() {
   };
 
   const text1ExitAnim = () => {
-    gsap.to(subtitle1, 0.2, {
+    gsap.to(subtitle1, 1, {
       delay: 0.2,
       opacity: 0,
       y: 20,
@@ -66,7 +66,7 @@ function LandingComponent() {
   };
 
   const text2EnterAnim = () => {
-    gsap.to(subtitle2, 0.2, {
+    gsap.to(subtitle2, 1, {
       delay: 0.2,
       opacity: 1,
       y: -20,
@@ -75,7 +75,7 @@ function LandingComponent() {
   };
 
   const text2ExitAnim = () => {
-    gsap.to(subtitle2, 0.2, {
+    gsap.to(subtitle2, 1, {
       delay: 0.2,
       opacity: 0,
       y: 20,
@@ -83,7 +83,7 @@ function LandingComponent() {
     });
   };
   const text3EnterAnim = () => {
-    gsap.to(subtitle3, 0.2, {
+    gsap.to(subtitle3, 1, {
       delay: 0.2,
       opacity: 1,
       y: -20,
@@ -92,7 +92,7 @@ function LandingComponent() {
   };
 
   const text3ExitAnim = () => {
-    gsap.to(subtitle3, 0.2, {
+    gsap.to(subtitle3, 1, {
       delay: 0.2,
       opacity: 0,
       y: 20,
@@ -132,7 +132,7 @@ function LandingComponent() {
           </div>
           <div className="flex flex-col font-medium text-right text-3xl space-y-8">
             <Link
-              to="/Exhibition/Enneagram"
+              to="/Exhibition/Stereotype"
               onMouseEnter={() => {
                 text1EnterAnim();
               }}
@@ -147,7 +147,7 @@ function LandingComponent() {
               รู้จักกับนพลักษณ์
             </Link>
             <Link
-              to="/Exhibition/Enneagram"
+              to="/Exhibition/Analysis"
               onMouseEnter={() => {
                 text2EnterAnim();
               }}
@@ -162,7 +162,7 @@ function LandingComponent() {
               แบบทดสอบนพลักษณ์
             </Link>
             <Link
-              to="/SelectType"
+              to="/Problem/"
               onMouseEnter={() => {
                 text3EnterAnim();
               }}
