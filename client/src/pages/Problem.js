@@ -29,7 +29,7 @@ export default function Problem() {
       exit={{ opacity: 0 }}
     >
       <Navigation route="/Exhibition" />
-      <div className="flex justify-center items-center h-screen w-full">
+      <div className="flex justify-center items-center h-screen w-full px-5 text-center">
         <div
           ref={(el) => {
             firstItem = el;
@@ -76,13 +76,4 @@ export default function Problem() {
       </div>
     </motion.div>
   );
-}
-
-{
-  /* <Link to="/Problem/SelectType">
-      <h1>Hej!</h1>
-    </Link>
-    <Link to="/Problem/SelectType">
-      <h1>Another Hej!</h1>
-    </Link> */
 }

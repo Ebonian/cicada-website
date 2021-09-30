@@ -1,10 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Navigation from "../../../components/Navigation";
-import axios from "../../../Axios";
+import Navigation from "../../components/Navigation";
+import axios from "../../Axios";
 import Pusher from "pusher-js";
-import { types } from "../../../Static";
-import { gsap, Power3 } from "gsap";
 
 export default function Feedback() {
   // api get req
@@ -36,13 +34,20 @@ export default function Feedback() {
 
   // console.log(contents);
   return (
-    <div>
-      {contents.map((content) => (
-        <div className="pt-10">
-          <p className="text-gray-800 text-lg">{content.content}</p>
-          <p className="text-gray-600 text-mg">{content.name}</p>
-        </div>
-      ))}
-    </div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <Navigation route="/Exhibition" noanim />
+      <div className="flex flex-col justify-center items-center h-auto w-full mt-32">
+        {contents.map((content) => (
+          <div className="pt-10">
+            <p className="text-gray-800 text-lg">{content.content}</p>
+            <p className="text-gray-600 text-mg">{content.name}</p>
+          </div>
+        ))}
+      </div>
+    </motion.div>
   );
 }

@@ -12,7 +12,7 @@ export default function Q6() {
   useEffect(() => {
     gsap
       .timeline()
-      .from(firstItem, 1.4, { delay: 2, opacity: 0 })
+      .from(firstItem, 1.4, { delay: 1, opacity: 0 })
       .to(firstItem, 1, { delay: 3, opacity: 0, display: "none" })
       .from(secondItem, 1, { delay: 0.3, opacity: 0, display: "none" });
   }, []);

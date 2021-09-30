@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import { gsap, Power3 } from "gsap";
@@ -88,7 +88,7 @@ export default function Home() {
               titleItem = el;
             }}
           >
-            อะโล่ฮ่าาาา
+            จักจั่นลอกคราบ
           </h1>
           <h6
             className="text-3xl font-medium text-gray-700 opacity-0"
@@ -96,7 +96,7 @@ export default function Home() {
               subtitleItem = el;
             }}
           >
-            อะล่าาาาโฮ่โอ่ฮีโย่อะจ้าากก
+            An Enneagram Online Exhibition
           </h6>
           <div
             className="flex duration-300 items-center text-xl space-x-2 text-gray-800 hover:text-gray-500 opacity-0"
@@ -114,7 +114,7 @@ export default function Home() {
                 exitAnim();
               }}
             >
-              มดนอนตะแคงเรียกมดตาย
+              เข้าสู่นิทรรศการ
             </Link>
             <FiArrowRight />
           </div>

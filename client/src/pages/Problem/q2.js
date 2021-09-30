@@ -14,12 +14,12 @@ export default class q2 extends Component {
         <Navigation route="/Exhibition" noanim />
         <div className="flex justify-center items-center h-screen w-full">
           <Choices
-            title="เยี่ยมเลย แล้วมีบางอย่างที่อยากทำให้ดีขึ้นอีกมั้ย "
+            title="เยี่ยมเลย แล้วมีบางอย่างที่อยากทำให้ดีขึ้นอีกมั้ย"
             subtitle=""
             q1="มี"
             q2="ไม่มี"
             q3=""
-            r1="/"
+            r1="/Problem/q9"
             r2="/Problem/q5"
             r3="/"
             s1=""

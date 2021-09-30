@@ -7,6 +7,7 @@ module.exports = {
       spacing: {
         600: "600px",
         500: "520px",
+        400: "400px",
         85: "85px",
       },
       fontSize: {

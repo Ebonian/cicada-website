@@ -103,7 +103,7 @@ function LandingComponent() {
   return (
     <div className="flex justify-center items-center h-screen w-full">
       <div className="flex h-screen w-full max-w-screen-2xl">
-        <div className="row-end flex flex-grow justify-end lg:justify-between mb-40 items-end px-5 2xl:px-0">
+        <div className="row-end flex flex-grow justify-end lg:justify-between mb-40 items-end pr-5 2xl:pr-0">
           <div className="hidden lg:flex max-w-screen-sm text-lg">
             <p
               className="absolute bottom-40 text-4xl opacity-0 text-gray-600"
@@ -111,7 +111,8 @@ function LandingComponent() {
                 subtitle1 = el;
               }}
             >
-              เรามาทำความรู้จักกับนพลักษณ์กันเถอะะโอ้เย่~
+              รู้จักที่มาที่ไปของนพลักษณ์ <br />
+              และทำความเข้าใจว่าทำไมเราถึงต้องเรียนรู้เกี่ยวกับมัน
             </p>
             <p
               className="absolute bottom-40 text-4xl opacity-0 text-gray-600"
@@ -119,7 +120,9 @@ function LandingComponent() {
                 subtitle2 = el;
               }}
             >
-              เรามาทำแบบทดสอบนพลักษณ์กันเถอะะโอ้เย่~
+              เลือกการ์ดที่ตรงกับคุณมากที่สุดเพื่อนำไปสู่ลักษณ์นั้น <br />
+              ยังไงก็ตามเราแนะนำให้อ่านมากกว่าหนึ่งลักษณ์ <br />
+              เพราะแบบทดสอบไม่ใช่ตัวตัดสินทุกอย่าง <br />
             </p>
             <p
               className="absolute bottom-40 text-4xl opacity-0 text-gray-600"
@@ -127,7 +130,8 @@ function LandingComponent() {
                 subtitle3 = el;
               }}
             >
-              เรามาแก้ปัญหาด้วยนพลักษณ์กันเถอะะโอ้เย่~
+              ต่อจากนี้จะเป็นการพูดคุยระหว่างเราที่ยาวสักหน่อย <br />
+              เมื่อเข้าใจลักษณ์ของตัวเองแล้วอย่าลืมมาแลกเปลี่ยนกันหน้านี้นะครับ
             </p>
           </div>
           <div className="flex flex-col font-medium text-right text-3xl space-y-8">

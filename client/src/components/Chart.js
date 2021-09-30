@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Chart({ route, src, style }) {
+export default function Chart({ route, src, styling }) {
   return (
     <Link to={route}>
-      <img className={style} src={src} />
+      <img className={styling} src={src} alt="Enneagram Chart" />
     </Link>
   );
 }

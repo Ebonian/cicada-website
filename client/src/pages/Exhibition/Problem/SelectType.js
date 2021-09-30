@@ -52,47 +52,47 @@ export default function SelectType() {
               </Link>
               <Chart
                 route="/Problem/Type1"
-                style="absolute w-20 h-20 right-24 top-16 cursor-pointer"
+                styling="absolute w-20 h-20 right-24 top-16 cursor-pointer"
                 src={one}
               />
               <Chart
                 route="/"
-                style="absolute w-20 h-20 right-0 top-1/2 -mt-20 cursor-pointer"
+                styling="absolute w-20 h-20 right-0 top-1/2 -mt-20 cursor-pointer"
                 src={two}
               />
               <Chart
                 route="/"
-                style="absolute w-20 h-20 bottom-32 right-8 cursor-pointer"
+                styling="absolute w-20 h-20 bottom-32 right-8 cursor-pointer"
                 src={three}
               />
               <Chart
                 route="/"
-                style="absolute w-20 h-20 bottom-5 right-40 cursor-pointer"
+                styling="absolute w-20 h-20 bottom-5 right-40 cursor-pointer"
                 src={four}
               />
               <Chart
                 route="/"
-                style="absolute w-20 h-20 bottom-5 left-40 cursor-pointer"
+                styling="absolute w-20 h-20 bottom-5 left-40 cursor-pointer"
                 src={five}
               />
               <Chart
                 route="/"
-                style="absolute w-20 h-20 bottom-32 left-8 cursor-pointer"
+                styling="absolute w-20 h-20 bottom-32 left-8 cursor-pointer"
                 src={six}
               />
               <Chart
                 route="/"
-                style="absolute w-20 h-20 left-0 top-1/2 -mt-20 cursor-pointer"
+                styling="absolute w-20 h-20 left-0 top-1/2 -mt-20 cursor-pointer"
                 src={seven}
               />
               <Chart
                 route="/"
-                style="absolute w-20 h-20 left-24 top-16 cursor-pointer"
+                styling="absolute w-20 h-20 left-24 top-16 cursor-pointer"
                 src={eight}
               />
               <Chart
                 route="/"
-                style="absolute left-1/2 -ml-10 w-20 h-20 cursor-pointer"
+                styling="absolute left-1/2 -ml-10 w-20 h-20 cursor-pointer"
                 src={nine}
               />
 
