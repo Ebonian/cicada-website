@@ -30,7 +30,7 @@ export default class q37 extends Component {
               q2="ผู้อื่น"
               q3=""
               r1="/Problem/q38"
-              r2="/Problem/q5"
+              r2="/Problem/q64"
               r3="/"
               s={s1}
             />
@@ -43,7 +43,7 @@ export default class q37 extends Component {
               q2="ผู้อื่น"
               q3=""
               r1="/Problem/q38"
-              r2="/Problem/q5"
+              r2="/Problem/q65"
               r3="/"
               s={s2}
             />
@@ -56,7 +56,7 @@ export default class q37 extends Component {
               q2="ผู้อื่น"
               q3=""
               r1="/Problem/q38"
-              r2="/Problem/q5"
+              r2="/Problem/q66"
               r3="/"
               s={s3}
             />
@@ -69,7 +69,7 @@ export default class q37 extends Component {
               q2="ผู้อื่น"
               q3=""
               r1="/Problem/q38"
-              r2="/Problem/q5"
+              r2="/Problem/q67"
               r3="/"
               s={s4}
             />
@@ -82,7 +82,7 @@ export default class q37 extends Component {
               q2="ผู้อื่น"
               q3=""
               r1="/Problem/q38"
-              r2="/Problem/q5"
+              r2="/Problem/q68"
               r3="/"
               s={s5}
             />
@@ -95,7 +95,7 @@ export default class q37 extends Component {
               q2="ผู้อื่น"
               q3=""
               r1="/Problem/q38"
-              r2="/Problem/q5"
+              r2="/Problem/q69"
               r3="/"
               s={s6}
             />
@@ -108,7 +108,7 @@ export default class q37 extends Component {
               q2="ผู้อื่น"
               q3=""
               r1="/Problem/q38"
-              r2="/Problem/q5"
+              r2="/Problem/q70"
               r3="/"
               s={s7}
             />
@@ -121,7 +121,7 @@ export default class q37 extends Component {
               q2="ผู้อื่น"
               q3=""
               r1="/Problem/q38"
-              r2="/Problem/q5"
+              r2="/Problem/q71"
               r3="/"
               s={s8}
             />
@@ -134,7 +134,7 @@ export default class q37 extends Component {
               q2="ผู้อื่น"
               q3=""
               r1="/Problem/q38"
-              r2="/Problem/q5"
+              r2="/Problem/q72"
               r3="/"
               s={s9}
             />

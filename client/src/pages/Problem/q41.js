@@ -16,6 +16,7 @@ export default class q41 extends Component {
           <Input
             title="งั้นบอกหน่อยสิว่าอยากพัฒนาส่วนไหนของจิตใจ"
             subtitle=""
+            r2="/Problem/q42"
           />
         </div>
       </motion.div>
