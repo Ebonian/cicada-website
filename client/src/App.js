@@ -105,6 +105,24 @@ import q60 from "./pages/Problem/q60";
 import q61 from "./pages/Problem/q61";
 import q62 from "./pages/Problem/q62";
 import q63 from "./pages/Problem/q63";
+import q64 from "./pages/Problem/q64";
+import q65 from "./pages/Problem/q65";
+import q66 from "./pages/Problem/q66";
+import q67 from "./pages/Problem/q67";
+import q68 from "./pages/Problem/q68";
+import q69 from "./pages/Problem/q69";
+import q70 from "./pages/Problem/q70";
+import q71 from "./pages/Problem/q71";
+import q72 from "./pages/Problem/q72";
+import q73 from "./pages/Problem/q73";
+import q74 from "./pages/Problem/q74";
+import q75 from "./pages/Problem/q75";
+import q76 from "./pages/Problem/q76";
+import q77 from "./pages/Problem/q77";
+import q78 from "./pages/Problem/q78";
+import q79 from "./pages/Problem/q79";
+import q888 from "./pages/Problem/q888";
+import q999 from "./pages/Problem/q999";
 
 function App() {
   const location = useLocation();
@@ -274,6 +292,24 @@ function App() {
           <Route path="/Problem/q61" component={q61} exact />
           <Route path="/Problem/q62" component={q62} exact />
           <Route path="/Problem/q63" component={q63} exact />
+          <Route path="/Problem/q64" component={q64} exact />
+          <Route path="/Problem/q65" component={q65} exact />
+          <Route path="/Problem/q66" component={q66} exact />
+          <Route path="/Problem/q67" component={q67} exact />
+          <Route path="/Problem/q68" component={q68} exact />
+          <Route path="/Problem/q69" component={q69} exact />
+          <Route path="/Problem/q70" component={q70} exact />
+          <Route path="/Problem/q71" component={q71} exact />
+          <Route path="/Problem/q72" component={q72} exact />
+          <Route path="/Problem/q73" component={q73} exact />
+          <Route path="/Problem/q74" component={q74} exact />
+          <Route path="/Problem/q75" component={q75} exact />
+          <Route path="/Problem/q76" component={q76} exact />
+          <Route path="/Problem/q77" component={q77} exact />
+          <Route path="/Problem/q78" component={q78} exact />
+          <Route path="/Problem/q79" component={q79} exact />
+          <Route path="/Problem/q888" component={q888} exact />
+          <Route path="/Problem/q999" component={q999} exact />
           {/* 404 catch all routes */}
           <Route path="*" component={NotFound} exact />
         </Switch>
