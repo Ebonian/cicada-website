@@ -17,7 +17,7 @@ export default class q51 extends Component {
           <div className="text-center w-80 md:w-96 font-medium text-lg mb-6">
             <div>
               <h1 className="text-gray-800 font-medium text-3xl mb-14 leading-loose">
-                ขอบคุณอีกครั้งสำหรับการแบ่งปันและความคิดเห็นนะ
+                ขอบคุณที่มาคุยกับเรานะ
               </h1>
             </div>
             <div className="flex flex-col items-center space-y-8">

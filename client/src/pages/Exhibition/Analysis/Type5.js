@@ -57,9 +57,9 @@ export default function Type5() {
             thirdItem = el;
           }}
         >
-          <h1>{types.type5.description}</h1>
+          <h1 className="leading-loose">{types.type5.description}</h1>
           <div className="flex duration-300 items-center text-xl space-x-2 text-gray-800 hover:text-gray-500">
-            <Link to="/Exhibition/Enneagram/Perfectionist">อ่านต่อ</Link>
+            <Link to="/Exhibition/Enneagram/Observer">อ่านต่อ</Link>
             <FiArrowRight />
           </div>
         </div>

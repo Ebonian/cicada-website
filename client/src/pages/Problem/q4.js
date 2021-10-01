@@ -19,7 +19,7 @@ export default class q4 extends Component {
             q1="มี"
             q2="ไม่มี"
             q3=""
-            r1="/"
+            r1="/Problem/q10"
             r2="/Problem/q5"
             r3="/"
             s1=""

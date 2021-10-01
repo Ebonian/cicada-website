@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { gsap, Power3 } from "gsap";
 import React, { useEffect, useRef } from "react";
+import { FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import Navigation from "../../components/Navigation";
 import { cardDesc } from "../../Static";
@@ -434,7 +435,97 @@ export default function Analysis() {
 
   function Popup({ A, B, C, D, E, F, G, H, I }) {
     return (
-      <div className="flex flex-col space-y-8 text-xl font-medium text-gray-800 max-w-screen-sm pt-20 sm:pt-0">
+      <div className="flex relative flex-col space-y-8 text-xl font-medium text-gray-800 max-w-screen-sm">
+        {A && (
+          <div
+            className="absolute -top-5 -right-5 z-50 cursor-pointer text-3xl text-gray-800"
+            onClick={(el) => {
+              popupExitA();
+            }}
+          >
+            <FiX />
+          </div>
+        )}
+        {B && (
+          <div
+            className="absolute -top-5 -right-5 z-50 cursor-pointer text-3xl text-gray-800"
+            onClick={(el) => {
+              popupExitB();
+            }}
+          >
+            <FiX />
+          </div>
+        )}
+        {C && (
+          <div
+            className="absolute -top-5 -right-5 z-50 cursor-pointer text-3xl text-gray-800"
+            onClick={(el) => {
+              popupExitC();
+            }}
+          >
+            <FiX />
+          </div>
+        )}
+        {D && (
+          <div
+            className="absolute -top-5 -right-5 z-50 cursor-pointer text-3xl text-gray-800"
+            onClick={(el) => {
+              popupExitD();
+            }}
+          >
+            <FiX />
+          </div>
+        )}
+        {E && (
+          <div
+            className="absolute -top-5 -right-5 z-50 cursor-pointer text-3xl text-gray-800"
+            onClick={(el) => {
+              popupExitE();
+            }}
+          >
+            <FiX />
+          </div>
+        )}
+        {F && (
+          <div
+            className="absolute -top-5 -right-5 z-50 cursor-pointer text-3xl text-gray-800"
+            onClick={(el) => {
+              popupExitF();
+            }}
+          >
+            <FiX />
+          </div>
+        )}
+        {G && (
+          <div
+            className="absolute -top-5 -right-5 z-50 cursor-pointer text-3xl text-gray-800"
+            onClick={(el) => {
+              popupExitG();
+            }}
+          >
+            <FiX />
+          </div>
+        )}
+        {H && (
+          <div
+            className="absolute -top-5 -right-5 z-50 cursor-pointer text-3xl text-gray-800"
+            onClick={(el) => {
+              popupExitH();
+            }}
+          >
+            <FiX />
+          </div>
+        )}
+        {I && (
+          <div
+            className="absolute -top-5 -right-5 z-50 cursor-pointer text-3xl text-gray-800"
+            onClick={(el) => {
+              popupExitI();
+            }}
+          >
+            <FiX />
+          </div>
+        )}
         {A && (
           <>
             <h1 className="text-gray-500 font-semibold text-4xl italic">
@@ -568,19 +659,16 @@ export default function Analysis() {
             <h1 className="text-gray-500 font-semibold text-4xl italic">
               Card I
             </h1>
-            <p>{cardDesc.cardH[0]}</p>
-            <p>{cardDesc.cardH[1]}</p>
-            <p>{cardDesc.cardH[2]}</p>
-            <p>{cardDesc.cardH[3]}</p>
-            <p>{cardDesc.cardH[4]}</p>
-            <p>{cardDesc.cardH[5]}</p>
-            <p>{cardDesc.cardH[6]}</p>
-            <p>{cardDesc.cardH[7]}</p>
-            <p>{cardDesc.cardH[8]}</p>
+            <p>{cardDesc.cardI[0]}</p>
+            <p>{cardDesc.cardI[1]}</p>
+            <p>{cardDesc.cardI[2]}</p>
+            <p>{cardDesc.cardI[3]}</p>
+            <p>{cardDesc.cardI[4]}</p>
+            <p>{cardDesc.cardI[5]}</p>
           </>
         )}
 
-        <div className="flex flex-grow justify-center md:justify-end items-center space-x-16 text-lg text-gray-700 pt-10 md:pt-0 pb-20 md:pb-0">
+        <div className="flex flex-grow justify-center md:justify-end items-start space-x-16 text-lg text-gray-700 pt-10 md:pt-0 pb-20 md:pb-0">
           {A && (
             <>
               <p
@@ -746,10 +834,10 @@ export default function Analysis() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="flex flex-col justify-center items-center h-auto mt-20 md:mt-0 md:h-screen w-full space-y-16 md:space-y-4">
+      <div className="flex flex-col justify-center items-center h-auto w-full space-y-16 md:space-y-4 mt-20">
         <Navigation route="/Exhibition" />
         <div
-          className="absolute md:fixed px-5 md:px-5 h-screen w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
+          className="absolute top-0 left-0 px-5 md:px-5 h-auto py-20 w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
           ref={(el) => {
             popupA = el;
           }}
@@ -757,7 +845,7 @@ export default function Analysis() {
           <Popup A />
         </div>
         <div
-          className="absolute md:fixed px-5 md:px-0 h-screen w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
+          className="absolute top-0 left-0 px-5 md:px-5 h-auto py-20 w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
           ref={(el) => {
             popupB = el;
           }}
@@ -765,7 +853,7 @@ export default function Analysis() {
           <Popup B />
         </div>
         <div
-          className="absolute md:fixed px-5 md:px-0 h-screen w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
+          className="absolute top-0 left-0 px-5 md:px-5 h-auto py-20 w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
           ref={(el) => {
             popupC = el;
           }}
@@ -773,7 +861,7 @@ export default function Analysis() {
           <Popup C />
         </div>
         <div
-          className="absolute md:fixed px-5 md:px-0 h-screen w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
+          className="absolute top-0 left-0 px-5 md:px-5 h-auto py-20 w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
           ref={(el) => {
             popupD = el;
           }}
@@ -781,7 +869,7 @@ export default function Analysis() {
           <Popup D />
         </div>
         <div
-          className="absolute md:fixed px-5 md:px-0 h-screen w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
+          className="absolute top-0 left-0 px-5 md:px-5 h-auto py-20 w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
           ref={(el) => {
             popupE = el;
           }}
@@ -789,7 +877,7 @@ export default function Analysis() {
           <Popup E />
         </div>
         <div
-          className="absolute md:fixed px-5 md:px-0 h-screen w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
+          className="absolute top-0 left-0 px-5 md:px-5 h-auto py-20 w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
           ref={(el) => {
             popupF = el;
           }}
@@ -797,7 +885,7 @@ export default function Analysis() {
           <Popup F />
         </div>
         <div
-          className="absolute md:fixed px-5 md:px-0 h-screen w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
+          className="absolute top-0 left-0 px-5 md:px-5 h-auto py-20 w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
           ref={(el) => {
             popupG = el;
           }}
@@ -805,7 +893,7 @@ export default function Analysis() {
           <Popup G />
         </div>
         <div
-          className="absolute md:fixed px-5 md:px-0 h-screen w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
+          className="absolute top-0 left-0 px-5 md:px-5 h-auto py-20 w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
           ref={(el) => {
             popupH = el;
           }}
@@ -813,7 +901,7 @@ export default function Analysis() {
           <Popup H />
         </div>
         <div
-          className="absolute md:fixed px-5 md:px-0 h-screen w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
+          className="absolute top-0 left-0 px-5 md:px-5 h-auto py-20 w-full z-50 justify-center md:items-center bg-white opacity-0 hidden"
           ref={(el) => {
             popupI = el;
           }}
@@ -827,7 +915,7 @@ export default function Analysis() {
               title = el;
             }}
           >
-            แบบทดสอบกี่กี๊
+            แบบทดสอบนพลักษณ์
           </h1>
           <p
             className="text-gray-600 text-lg"

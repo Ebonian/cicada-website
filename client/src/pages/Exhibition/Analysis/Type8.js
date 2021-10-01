@@ -57,9 +57,9 @@ export default function Type8() {
             thirdItem = el;
           }}
         >
-          <h1>{types.type8.description}</h1>
+          <h1 className="leading-loose">{types.type8.description}</h1>
           <div className="flex duration-300 items-center text-xl space-x-2 text-gray-800 hover:text-gray-500">
-            <Link to="/Exhibition/Enneagram/Perfectionist">อ่านต่อ</Link>
+            <Link to="/Exhibition/Enneagram/Boss">อ่านต่อ</Link>
             <FiArrowRight />
           </div>
         </div>

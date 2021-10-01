@@ -36,7 +36,7 @@ export default function Type9() {
             firstItem = el;
           }}
         >
-          <h1>ยินดีด้วย</h1>
+          <h1 className="leading-loose">ยินดีด้วย</h1>
           <h1 className="text-5xl text-gray-900">คุณคือลักษณ์ 9!</h1>
         </div>
 
@@ -59,7 +59,7 @@ export default function Type9() {
         >
           <h1>{types.type9.description}</h1>
           <div className="flex duration-300 items-center text-xl space-x-2 text-gray-800 hover:text-gray-500">
-            <Link to="/Exhibition/Enneagram/Perfectionist">อ่านต่อ</Link>
+            <Link to="/Exhibition/Enneagram/Peacemaker">อ่านต่อ</Link>
             <FiArrowRight />
           </div>
         </div>

@@ -11,7 +11,7 @@ import "dotenv/config";
 
 // app config
 const app = express();
-const port = process.env.PORT || 9000;
+const PORT = process.env.PORT || 9000;
 
 const pusher = new Pusher({
   appId: process.env.PUSHER_APPID,
@@ -86,4 +86,4 @@ app.post("/contents/new", (req, res) => {
 });
 
 // listener
-app.listen(port, () => console.log(`Listening on localhost:${port}`));
+app.listen(PORT, () => console.log(`Listening on localhost:${PORT}`));

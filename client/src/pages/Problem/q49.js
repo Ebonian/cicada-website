@@ -62,7 +62,7 @@ export default function Q49() {
             q2="ไม่ละ ขอบคุณ"
             q3=""
             r1="/Problem/q50"
-            r2="/Exhibition"
+            r2="/Problem/q51"
             r3=""
             s1=""
             s2=""

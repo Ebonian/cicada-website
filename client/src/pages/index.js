@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import { gsap, Power3 } from "gsap";
@@ -6,8 +6,6 @@ import { motion } from "framer-motion";
 import CicadaLogo from "../images/cicada.png";
 
 export default function Home() {
-  const pluem = "🐄";
-
   let imageItem = useRef(null);
   let titleItem = useRef(null);
   let subtitleItem = useRef(null);
@@ -66,6 +64,9 @@ export default function Home() {
       ease: Power3.easeOut,
     });
   };
+
+  const Hello = "Hey!";
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -105,13 +106,11 @@ export default function Home() {
             }}
           >
             <Link
-              to={{
-                pathname: "/Exhibition",
-                state: pluem,
-              }}
+              to="/Exhibition"
               className=""
               onClick={() => {
                 exitAnim();
+                clickHandler();
               }}
             >
               เข้าสู่นิทรรศการ
@@ -123,3 +122,13 @@ export default function Home() {
     </motion.div>
   );
 }
+
+let isPlaying = false;
+
+const clickHandler = () => {
+  isPlaying = true;
+};
+
+export const Music = () => {
+  return isPlaying;
+};

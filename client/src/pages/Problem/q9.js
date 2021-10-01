@@ -11,7 +11,7 @@ export default function Q9() {
       exit={{ opacity: 0 }}
     >
       <Navigation route="/Exhibition" noanim />
-      <div className="flex justify-center items-center my-24 sm:my-0 h-auto sm:h-screen w-full">
+      <div className="flex justify-center items-start py-32 sm:py-24 h-auto sm:h-screen w-full">
         <SelectType
           title="ก่อนที่เราจะเริ่มขั้นตอนแรก มาเลือกลักษณ์ของคุณก่อน"
           subtitle=""

@@ -20,8 +20,8 @@ export default class q1 extends Component {
             q2="ไม่ค่อยเลย"
             q3="เฉย ๆ แหละ"
             r1="/Problem/q2"
-            r2="/Problem/q3"
-            r3="/Problem/q4"
+            r2="/Problem/q4"
+            r3="/Problem/q3"
           />
         </div>
       </motion.div>

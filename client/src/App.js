@@ -4,6 +4,8 @@ import { Route, Switch, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import ReactAudioPlayer from "react-audio-player";
 
+import { Music } from "./pages/index";
+
 import music from "../src/audio/Touching_Moment.mp3";
 // import silence from "../src/audio/silence.mp3";
 
@@ -99,34 +101,44 @@ import q56 from "./pages/Problem/q56";
 import q57 from "./pages/Problem/q57";
 import q58 from "./pages/Problem/q58";
 import q59 from "./pages/Problem/q59";
+import q60 from "./pages/Problem/q60";
+import q61 from "./pages/Problem/q61";
+import q62 from "./pages/Problem/q62";
+import q63 from "./pages/Problem/q63";
 
 function App() {
   const location = useLocation();
 
   // bgm function
-  // const bgm = new Audio(music);
-  // bgm.volume = 0.2;
-  // if (typeof bgm.loop == "boolean") {
-  //   bgm.loop = true;
-  // } else {
-  //   bgm.addEventListener(
-  //     "ended",
-  //     function () {
-  //       this.currentTime = 0;
-  //       this.play();
-  //     },
-  //     false
-  //   );
-  // }
+  const bgm = new Audio(music);
+  bgm.volume = 0.2;
+  if (typeof bgm.loop == "boolean") {
+    bgm.loop = true;
+  } else {
+    bgm.addEventListener(
+      "ended",
+      function () {
+        this.currentTime = 0;
+        this.play();
+      },
+      false
+    );
+  }
   // useEffect(() => {
   //   bgm.play();
   // }, []);
 
-  const vol = 0.4;
+  if (Music()) {
+    bgm.play();
+    // console.log(typeof Music);
+  }
+
+  // const vol = 0.4;
+  // console.log(Music());
 
   return (
     <>
-      <ReactAudioPlayer
+      {/* <ReactAudioPlayer
         src={music}
         autoPlay
         loop
@@ -135,7 +147,8 @@ function App() {
         onCanPlayThrough={() => {
           console.log("Audio is ready.");
         }}
-      />
+        id="audio"
+      /> */}
 
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
@@ -257,6 +270,10 @@ function App() {
           <Route path="/Problem/q57" component={q57} exact />
           <Route path="/Problem/q58" component={q58} exact />
           <Route path="/Problem/q59" component={q59} exact />
+          <Route path="/Problem/q60" component={q60} exact />
+          <Route path="/Problem/q61" component={q61} exact />
+          <Route path="/Problem/q62" component={q62} exact />
+          <Route path="/Problem/q63" component={q63} exact />
           {/* 404 catch all routes */}
           <Route path="*" component={NotFound} exact />
         </Switch>

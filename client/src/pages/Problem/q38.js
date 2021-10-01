@@ -22,7 +22,7 @@ export default class q38 extends Component {
               q2="ความคิด"
               q3=""
               r1="/Problem/q39"
-              r2="/Problem/q5"
+              r2="/Problem/q60"
               r3="/"
               s={s}
             />
@@ -35,7 +35,7 @@ export default class q38 extends Component {
               q2="ความคิด"
               q3=""
               r1="/Problem/q52"
-              r2="/Problem/q5"
+              r2="/Problem/q60"
               r3="/"
               s={s}
             />
@@ -48,7 +48,7 @@ export default class q38 extends Component {
               q2="ความคิด"
               q3=""
               r1="/Problem/q52"
-              r2="/Problem/q5"
+              r2="/Problem/q60"
               r3="/"
               s={s}
             />
@@ -61,7 +61,7 @@ export default class q38 extends Component {
               q2="ความคิด"
               q3=""
               r1="/Problem/q53"
-              r2="/Problem/q5"
+              r2="/Problem/q60"
               r3="/"
               s={s}
             />
@@ -74,7 +74,7 @@ export default class q38 extends Component {
               q2="ความคิด"
               q3=""
               r1="/Problem/q54"
-              r2="/Problem/q5"
+              r2="/Problem/q60"
               r3="/"
               s={s}
             />
@@ -87,7 +87,7 @@ export default class q38 extends Component {
               q2="ความคิด"
               q3=""
               r1="/Problem/q55"
-              r2="/Problem/q5"
+              r2="/Problem/q60"
               r3="/"
               s={s}
             />
@@ -100,7 +100,7 @@ export default class q38 extends Component {
               q2="ความคิด"
               q3=""
               r1="/Problem/q55"
-              r2="/Problem/q5"
+              r2="/Problem/q60"
               r3="/"
               s={s}
             />
@@ -113,7 +113,7 @@ export default class q38 extends Component {
               q2="ความคิด"
               q3=""
               r1="/Problem/q56"
-              r2="/Problem/q5"
+              r2="/Problem/q60"
               r3="/"
               s={s}
             />
@@ -126,7 +126,7 @@ export default class q38 extends Component {
               q2="ความคิด"
               q3=""
               r1="/Problem/q57"
-              r2="/Problem/q5"
+              r2="/Problem/q60"
               r3="/"
               s={s}
             />
