@@ -4,8 +4,6 @@ import { Route, Switch, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import ReactAudioPlayer from "react-audio-player";
 
-import { Music } from "./pages/index";
-
 import music from "../src/audio/Touching_Moment.mp3";
 // import silence from "../src/audio/silence.mp3";
 
@@ -124,11 +122,8 @@ import q79 from "./pages/Problem/q79";
 import q888 from "./pages/Problem/q888";
 import q999 from "./pages/Problem/q999";
 
-function App() {
-  const location = useLocation();
-
   // bgm function
-  const bgm = new Audio(music);
+  export const bgm = new Audio(music);
   bgm.volume = 0.2;
   if (typeof bgm.loop == "boolean") {
     bgm.loop = true;
@@ -142,14 +137,19 @@ function App() {
       false
     );
   }
+
+
+function App() {
+  const location = useLocation();
+
+
   // useEffect(() => {
   //   bgm.play();
   // }, []);
 
-  if (Music()) {
-    bgm.play();
-    // console.log(typeof Music);
-  }
+  // if (Music()) {
+  //   bgm.play();
+  // }
 
   // const vol = 0.4;
   // console.log(Music());
