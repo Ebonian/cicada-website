@@ -4,6 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 import { gsap, Power3 } from "gsap";
 import { motion } from "framer-motion";
 import CicadaLogo from "../images/cicada.png";
+import { bgm } from "../App";
 
 export default function Home() {
   let imageItem = useRef(null);
@@ -123,12 +124,6 @@ export default function Home() {
   );
 }
 
-let isPlaying = false;
-
 const clickHandler = () => {
-  isPlaying = true;
-};
-
-export const Music = () => {
-  return isPlaying;
+  bgm.play()
 };
